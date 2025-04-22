@@ -1,0 +1,386 @@
+<html>
+<head>
+<title>BIS - Bureau of Indian Standards</title>
+<link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css" />
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+margin: 0px;
+padding: 0px;
+font-family: 'poppins';
+box-sizing: border-box;
+}
+
+body{
+}
+
+.header{
+width: 100%;
+background : gray;
+display: flex;
+flex-direction: column;
+align-items: center;
+font-family: 'Montserrat';
+}
+
+.header .top{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 30px 40px 30px 40px;
+background: white;
+
+}
+
+
+
+.header .top .logo img{
+width: 62vw;
+}
+
+.header .top .menu i{
+font-size: 95px;
+}
+
+.header .mid{
+display: flex;
+width: 100%;
+flex-direction: column;
+align-items: center;
+padding: 45px;
+gap: 30px;
+background-image: url(content://media/external/downloads/1707799692);
+background-size: cover;
+}
+
+.header .mid h2{
+display: inline-block;
+font-size: 52px;
+font-weight: 600;
+color: white;
+}
+
+.header .mid .midpart{
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 30px;
+font-size: 38px;
+color: white;
+}
+
+.header .mid .midpart i{
+font-size: 48px;
+}
+
+.header .mid .midpart::nth-child(4){
+opacity: 0.6;
+}
+
+.header .bottom{
+width: 100%;
+background: white;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 34px 45px 34px 40px;
+}
+
+.header .bottom .search{
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.header .bottom .search i{
+font-size: 45px;
+background: white;
+padding: 35px 25px 35px 25px;
+border-top-left-radius: 16px;
+border-bottom-left-radius: 16px;
+border: 3px solid lightgray;
+border-right: transparent
+
+}
+
+.header .bottom .search input{
+outline:none;
+border: 3px solid lightgray;
+border-top-right-radius: 16px;
+border-bottom-right-radius: 16px;
+width: 53vw;
+height: 13vw;
+font-size: 40px;
+font-family: 'Montserrat';
+padding-left: 30px;
+}
+
+.header .bottom .search input::placeholder{
+font-size: 35px;
+position: absolute;
+top: 30%;
+left: 20;
+
+}
+
+.header .bottom .filter{
+border: 1px solid red;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 20px;
+border: 3px solid #06054B;
+padding: 30px;
+border-radius: 12px;
+}
+
+.header .bottom .filter i{
+font-size: 45px;
+color: #06054B;
+}
+
+.header .bottom .filter p{
+font-size: 40px;
+color: #06054B;
+font-weight: 600;
+
+font-family: 'Montserrat';
+}
+
+.sidemenu{
+width: 100%;
+height: 100vh;
+position: fixed;
+font-size: 110px;
+color: white;
+top:0%;
+left:-100vw;
+display: flex;
+flex-direction: column;
+font-family: 'Montserrat';
+background: white;
+}
+
+.sidemenu .top{
+background: #06054B;
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+padding: 28px;
+
+}
+
+.sidemenu .top h1{
+font-size: 50px;
+font-weight: 500;
+
+}
+
+.sidemenu .top i{
+font-size: 86px;
+}
+
+.sidemenu .opts{
+font-family: 'poppins';
+}
+
+.sidemenu .opts div{
+font-size: 40px;
+color: black;
+font-weight: 300;
+padding: 40px 50px 40px 50px;
+
+}
+
+
+.page1 .quiz1{
+width: 100%;
+display: flex;
+flex-direction: column;
+gap: 3px;
+background: white;
+padding-top: 70px;
+
+}
+
+.page1 .quiz1 .thumb{
+text-align: center;
+position: relative;
+}
+
+
+.page1 .quiz1 img{
+width: 94%;
+height: 55vw;
+border-radius: 30px;
+}
+
+.page1 .quiz1 .thumb .comp{
+font-family: 'Montserrat';
+font-size: 32px;
+background: darkgreen;
+padding: 10px 30px 10px 30px;
+position: absolute;
+top: 95%;
+right: 6%;
+border-radius: 12px;
+color: white;
+font-weight: 600;
+}
+
+.page1 .quiz1 .hd{
+padding-top: 12px;
+padding-left: 28px;
+}
+
+.page1 .quiz1 .hd h2{
+font-weight: 500;
+font-size: 43px;
+
+}
+
+.page1 .quiz1 .fromto{
+width 100%;
+background: none;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 28px 0 28px;
+}
+
+.page1 .quiz1 .fromto .left button{
+outline: none;
+border: 2px solid darkblue;
+font-size: 34px;
+background: white;
+font-family: 'Montserrat';
+color: darkblue;
+font-weight: 500;
+padding: 28px;
+border-radius: 12px;
+}
+
+.page1 .quiz1 .fromto .right{
+border: 0px solid red;
+display: flex:
+flex-direction: column;
+font-size: 38px;
+font-family: 'Montserrat';
+color: gray;
+font-weight: 500;
+}
+
+
+.page1 .quiz1 .fromto .span{
+color: lightgray;
+font-weight: 200;
+}
+
+</style>
+</head>
+<body>
+<div class="header">
+     <div class="top">
+        <div class="logo">
+          <img src="content://media/external/downloads/1707799690">
+        </div>
+        <div class="menu">
+           <i class="hgi hgi-stroke hgi-menu-01"></i>
+        </div>
+     </div>
+     <div class="mid">
+        <h2>Quiz</h2>
+        <div class="midpart">
+            <i class="hgi hgi-stroke hgi-sharp hgi-home-05"></i>
+            
+            <p>Home</p>
+            <p>/</p>
+            <p>Quiz</p>
+        </div>
+     </div>
+     <div class="bottom">
+        <div class="search">
+          <i class="hgi hgi-stroke hgi-search-01"></i>
+          <input type="text" placeholder="Search By Quiz Name..." />
+        </div>
+        <div class="filter">
+          <i class="hgi hgi-stroke hgi-filter"></i>
+          <p>Filter</p>
+        </div>
+     </div>
+</div>
+<div class="page1">
+  <div class="quiz1">
+    <div class="thumb">
+      <img src="content://media/external/downloads/1707799694">
+      <div class="comp">Completed</div>
+    </div>
+    <div class="hd">
+      <h2>Science and Standards</h2>
+    </div>
+    <div class="fromto">
+      <div class="right">
+        <div class="from"><span>From</span>: <b>Apr 5, 2025</b></div>
+        <div class="to"><span>To</span>: <b>Apr 5, 2025</b></div>
+      </div>
+      <div class="left">
+        <button>VIEW DETAILS</button>
+      </div>
+    </div>
+    <hr>
+    <div class="dets">
+      
+    </div>
+  </div>
+</div>
+<div class="footer">
+  
+</div>
+
+<div class="sidemenu">
+ <div class="top">
+   <h1>Menu</h1>
+   <i class="hgi hgi-stroke hgi-cancel-01"></i>
+ </div>
+ <div class="opts">
+   <div class="Home">Home</div>
+   <div class="Quiz">Quiz</div>
+   <div class="Win">Winner's List</div>
+   <div class="Cont">Contact Us</div>
+ </div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js" integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+let menubtn = document.querySelector('.header .top .menu i');
+let sime = document.querySelector('.sidemenu');
+let closebtn = document.querySelector('.sidemenu .top i');
+
+
+menubtn.addEventListener('click', () => {
+gsap.to(sime, {
+left: "0",
+duration: 0.2,
+ease: "ease-in-out"
+});
+});
+
+closebtn.addEventListener('click', () => {
+gsap.to(sime, {
+left: "-100vw",
+duration: 0.2,
+ease: "ease-in-out"
+})
+})
+
+</script>
+</body>
+</html>
